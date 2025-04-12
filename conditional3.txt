@@ -1,0 +1,125 @@
+public class LoanApproval {
+	 public String checkLoanApproval(double salary, int creditScore){
+		if(salary>80000 &&creditScore>750) {
+			return "Approved Immediately";
+		} 
+		else if((salary>50000 || salary<=80000) && (creditScore>650 || creditScore<=750)) {
+		      return "Loan Approved with Higher Interest Rate" ;
+		}
+		else if((salary>30000 || salary<=50000)&& (creditScore>500 || creditScore<=650)) {
+			return "Co-signer Required" ;
+		}
+		else {
+			return "Loan Rejected" ;
+		}
+			
+	 }
+	 
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LoanApproval obj=new LoanApproval();
+		String result=obj.checkLoanApproval(800000,750);
+		System.out.println(result);
+
+	}
+
+}
+
+public class UniversityAdmission {
+	public String evaluateAdmission(int marks, boolean sport){
+		if((marks >95)||(sport==false)) {
+			return "Admitted with Scholarship" ;
+		} 
+		else if(marks>85 || marks<=94) {
+		      return "Admitted without Scholarship" ;
+		}
+		else if((marks>70 || marks<=84) && (sport==true)) {
+			return "Admitted under Sports Quota" ;
+		}
+		else if(marks>60 || marks<=69) {
+			return "Interview Required";
+		}
+		else {
+			return "Admission Rejected" ;
+		}
+			
+	 }
+	 
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		UniversityAdmission obj=new UniversityAdmission();
+		String result=obj.evaluateAdmission(85,false);
+		System.out.println(result);
+
+	}
+
+}
+
+public class bonusCalculator {
+public double calculateBonus(int experience, int rating, double salary) {
+	 if(experience>=5 && rating>=9 && salary>=50000) {
+		 return   10000;
+	 } else if(experience>=3 && experience<=5 && rating<=9 && rating>=7 && salary>50000) {
+		 return 8000;
+	 }else if(experience>=1 && experience<=3 && rating<=7 && rating>=5 && salary>40000) {
+		 return 6000;
+	 }else {
+		 System.out.println("No Bonus");
+}
+	return 90000;
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     bonusCalculator obj1=new bonusCalculator();
+      double result=obj1.calculateBonus(4, 8,70000);
+     System.out.println(result);
+    
+	}
+}
+
+public class insurancePolicy {
+ public String calculatePremium(int age ,int experience) {
+	  if(age>=50 && experience>=10) {
+		  return "Lowest Premium";
+	  }else if(age>=30 && age<=49 && experience>=5) {
+		  return "moderate Premium";
+	  }else if(age>=18 && age<=29 && experience<=5) {
+		  return "Highest Premium";
+	  }else {
+		  return "No premium";
+	  }
+ }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       insurancePolicy obj2= new insurancePolicy();
+      String result= obj2.calculatePremium(66,15);
+       System.out.println(result);
+	}
+}
+
+
+public class movieTheater {
+	 public double getTicketPrice(int age) {
+		 if(age<=5) {
+			 return 0;
+		 }else if(age>=5 && age<=12 ) {
+			 return 5;
+		 }else if(age>=13 && age<=60) {
+			 return 10;
+		 }else if (age>60) {
+			 return 5;
+		 }else {
+			 System.out.println("50% of standard price");
+		 } return 20;
+	 }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     movieTheater m1=new movieTheater();
+     double result=m1.getTicketPrice(65);
+     System.out.println(result);
+	}
+}
+
+

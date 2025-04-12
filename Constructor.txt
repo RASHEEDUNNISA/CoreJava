@@ -1,0 +1,396 @@
+School and Principal Management
+
+package com.school.management;
+
+public class School {
+	private String name,location;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getLocation() {
+		return location;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
+	
+	public void showSchoolInfo() {
+		System.out.println("School Name "+name);
+		System.out.println("Location "+location);
+	}
+}
+
+package com.school.staff;
+
+public class Principal {
+	private String principalName;
+	private int experienceYears;
+	public String getPrincipalName() {
+		return principalName;
+	}
+	public void setPrincipalName(String principalName) {
+		this.principalName = principalName;
+	}
+	public int getExperienceYears() {
+		return experienceYears;
+	}
+	public void setExperienceYears(int experienceYears) {
+		this.experienceYears = experienceYears;
+	}
+	
+	public void showPrincipal() {
+		System.out.println("Principal Name "+principalName);
+		System.out.println("Experince Years "+experienceYears);
+	}
+}
+
+package com.school.app;
+import com.school.management.School;
+import com.school.staff.Principal;
+public class SchoolApp {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		School s=new School();
+		s.setName("St.Ans");
+		s.setLocation("Hyderabad Telangana");
+		
+		Principal p=new Principal();
+		p.setPrincipalName("Buddi");
+		p.setExperienceYears(5);
+		s.showSchoolInfo();
+		System.out.println();
+		p.showPrincipal();
+		
+	}
+}
+----------------------------------------------------------------------------------------
+Employee and Department Management
+
+package com.company.hr;
+
+public class Employee {
+	private int id;
+	private String name;
+	private double salary;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public double getSalary() {
+		return salary;
+	}
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+	
+	public void showEmployeeDetails() {
+		System.out.println("Employee ID "+id);
+		System.out.println("Employee Name "+name);
+		System.out.println("Employee Salary "+salary);
+	}
+}
+
+package com.company.admin;
+
+public class Department {
+	private String deptName;
+	private int deptId;
+	public String getDeptName() {
+		return deptName;
+	}
+	public void setDeptName(String deptName) {
+		this.deptName = deptName;
+	}
+	public int getDeptId() {
+		return deptId;
+	}
+	public void setDeptId(int deptId) {
+		this.deptId = deptId;
+	}
+	
+	public void showDeptDetails() {
+		System.out.println("Department ID "+deptId);
+		System.out.println("Department Name "+deptName);
+	}
+}
+
+
+package com.company.app;
+import com.company.admin.Department;
+import com.company.hr.Employee;
+public class CompanyApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Department d=new Department();
+		Employee e=new Employee();
+		
+		e.setId(1);
+		e.setName("XYZ");
+		e.setSalary(75000);
+		
+		d.setDeptId(101);
+		d.setDeptName("CSE");
+		
+		e.showEmployeeDetails();
+		System.out.println();
+		d.showDeptDetails();
+	}
+
+}
+--------------------------------------------------------------------------------
+Car and Engine Details
+
+package com.vehicl;
+
+public class Car {
+	private String brand;
+	private String model;
+	private double price;
+	public String getBrand() {
+		return brand;
+	}
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+	public String getModel() {
+		return model;
+	}
+	public void setModel(String model) {
+		this.model = model;
+	}
+	public double getPrice() {
+		return price;
+	}
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	
+	public void showCarDetails() {
+		System.out.println("Brand "+brand);
+		System.out.println("Model "+model);
+		System.out.println("Price "+price);
+	}
+}
+
+
+package com.vehicles.parts;
+
+public class Engine {
+	private String engineType;
+	private int horsepower;
+	public String getEngineType() {
+		return engineType;
+	}
+	public void setEngineType(String engineType) {
+		this.engineType = engineType;
+	}
+	public int getHorsepower() {
+		return horsepower;
+	}
+	public void setHorsepower(int horsepower) {
+		this.horsepower = horsepower;
+	}
+	
+	public void showEngineDetails() {
+		System.out.println("Engine Type"+engineType);
+		System.out.println("Horse Power "+horsepower);
+	}
+	
+}
+
+package com.vehicle.app;
+import com.vehicles.parts.*;
+import com.vehicl.*;
+public class CarApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Car c=new Car();
+		Engine e=new Engine();
+		
+		c.setBrand("Audi");
+		c.setModel("Q1");
+		c.setPrice(2500000);
+		
+		e.setEngineType("w12");
+		e.setHorsepower(50);
+		
+		c.showCarDetails();
+		System.out.println();
+		e.showEngineDetails();
+		
+	}
+
+}
+--------------------------------------------------------------------------------------
+Library and Librarian Management
+
+package com.library.books;
+
+public class Library {
+	private String libraryName;
+	private int totalBooks;
+	public String getLibraryName() {
+		return libraryName;
+	}
+	public void setLibraryName(String libraryName) {
+		this.libraryName = libraryName;
+	}
+	public int getTotalBooks() {
+		return totalBooks;
+	}
+	public void setTotalBooks(int totalBooks) {
+		this.totalBooks = totalBooks;
+	}
+	
+	public void showLibraryDetails() {
+		System.out.println("Library Name"+libraryName);
+		System.out.println("Total Books "+totalBooks);
+	}
+}
+
+
+package com.library.staff;
+
+public class Librarian {
+	private String librarianName;
+	private int yearOfExperience;
+	public String getLibrarianName() {
+		return librarianName;
+	}
+	public void setLibrarianName(String librarianName) {
+		this.librarianName = librarianName;
+	}
+	public int getYearOfExperience() {
+		return yearOfExperience;
+	}
+	public void setYearOfExperience(int yearOfExperience) {
+		this.yearOfExperience = yearOfExperience;
+	}
+	
+	public void showsLibrarianDetails() {
+		System.out.println("Librarian Name "+librarianName);
+		System.out.println("Year of Experience "+yearOfExperience);
+	}
+}
+
+
+package com.library.app;
+import com.library.books.*;
+import com.library.staff.*;
+public class LibraryApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Library l=new Library();
+		Librarian l1=new Librarian();
+		
+		l.setLibraryName("Janata");
+		l.setTotalBooks(100);
+		
+		l1.setLibrarianName("Harshika");
+		l1.setYearOfExperience(10);
+		
+		l.showLibraryDetails();
+		System.out.println();
+		l1.showsLibrarianDetails();
+	}
+
+}
+--------------------------------------------------------------------------------
+Bank Account and Customer Management
+
+package com.bank.accounts;
+
+public class BankAccount {
+	private String accNo;
+	private double balance;
+	public String getAccNo() {
+		return accNo;
+	}
+	public void setAccNo(String accNo) {
+		this.accNo = accNo;
+	}
+	public double getBalance() {
+		return balance;
+	}
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+	
+	public void showAccDetails() {
+		System.out.println("Account Number "+accNo);
+		System.out.println("Balance "+balance);
+	}
+}
+
+package com.bank.customers;
+
+public class Customer {
+	private String customerName;
+	private int custID;
+	
+	public String getCustomerName() {
+		return customerName;
+	}
+
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
+	}
+
+	public int getCustID() {
+		return custID;
+	}
+
+	public void setCustID(int custID) {
+		this.custID = custID;
+	}
+
+	public void showCustomerDetails() {
+		System.out.println("Customer Name "+customerName);
+		System.out.println("Customer ID "+custID);
+	}
+	
+}
+
+
+package com.bank.app;
+import com.bank.accounts.*;
+import com.bank.customers.*;
+public class BankApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		BankAccount ba=new BankAccount();
+		Customer c=new Customer();
+		
+		ba.setAccNo("123456789");
+		ba.setBalance(70000);
+		
+		c.setCustID(100);
+		c.setCustomerName("Buddi");
+		
+		c.showCustomerDetails();
+		System.err.println();
+		 ba.showAccDetails();
+	}
+
+}
+
+

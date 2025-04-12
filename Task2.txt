@@ -1,0 +1,210 @@
+package Task2;
+
+public class Book {
+
+	static String libraryName="BookLovers";
+	String author,title;
+	void displayInfo() {
+		System.out.println("Library Name : "+libraryName);
+		System.out.println("Book Title : "+title);
+		System.out.println("Book Author : "+author);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Book obj=new Book();
+		obj.author="Ana Haung";
+		obj.title="Twisted Love";
+		obj.displayInfo();
+		libraryName="BookHub";
+		obj.displayInfo();
+	}
+
+}
+
+-------------------------------------------------------------------------------------------------------
+package Task2;
+
+public class Car {
+
+	static String showroomName="Honda";
+	String modelName;
+	double price;
+	void displayDetails() {
+		System.out.println("Showroom Name : "+showroomName);
+		System.out.println("Car Model : "+ modelName);
+		System.out.println("Car Price : "+price);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Car obj=new Car();
+		obj.modelName="Tesla Model";
+		obj.price=80000;
+		obj.displayDetails();
+		showroomName="Elite Motors";
+		obj.displayDetails();
+		
+		Car obj1=new Car();
+		obj1.modelName="BMW x5";
+		obj1.price=75000;
+		obj1.displayDetails();
+		
+	}
+
+}
+
+-------------------------------------------------------------------------------------------------------
+
+package Task2;
+
+public class Faculty {
+
+	static String uniName="Standford University";
+	String facultyName,department;
+	void showFacultyDetails() {
+		System.out.println("University Name : "+uniName);
+		System.out.println("Faculty Name : "+facultyName);
+		System.out.println("Department : "+department);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Faculty obj=new Faculty();
+		obj.facultyName="Dr. Robert Brown";
+		obj.department="Computer Science";
+		obj.showFacultyDetails();
+		System.out.println("-----------------------------------------");
+		Faculty obj1=new Faculty();
+		obj1.facultyName="Dr. Lisa Green";
+		obj1.department="Physics ";
+		obj1.showFacultyDetails();
+	}
+
+}
+
+-------------------------------------------------------------------------------------------------------
+
+package Task2;
+
+public class GetMethod {
+
+	byte b=8;
+	int i=200;
+	short s=100;
+	long l=7895625;
+	float f=41366588f;
+	double d=156545;
+	char ch='a';
+	boolean bool=true;
+	String str="Rashee";
+	
+	byte getByteValue() {
+		return b;
+	}
+	short getShortValue() {
+		return s;
+	}
+	int getIntValue() {
+		return i;
+	}
+	long getLongValue() {
+		return l;
+	}
+	float getFloatValue() {
+		return f;
+	}
+	Double getDoubleValue() {
+		return d;
+	}
+	char getCharValue() {
+		return ch;
+	}
+	boolean getBoolValue() {
+		return bool;
+	}
+	String getStringValue() {
+		return str;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		GetMethod obj=new GetMethod();
+		byte b=obj.getByteValue();
+		short i=obj.getShortValue();
+		int s=obj.getIntValue();
+		long l=obj.getLongValue();
+		float f=obj.getFloatValue();
+		double d=obj.getDoubleValue();
+		char ch=obj.getCharValue();
+		boolean bool=obj.getBoolValue();
+		String str=obj.getStringValue();
+		
+		System.out.println("Byte "+b);
+		System.out.println("int "+i);
+		System.out.println("short "+s);
+		System.out.println("long "+l);
+		System.out.println("float"+f);
+		System.out.println("double "+d);
+		System.out.println("Char "+ch);
+		System.out.println("Boolean "+bool);
+		System.out.println("String "+str);
+	}
+
+}
+
+---------------------------------------------------------------------------------------------
+package Task2;
+
+public class Mobile {
+	static String storeName="Tech World";
+	String brand;
+	double price;
+	
+	void showDetails() {
+		System.out.println("Store Name : "+storeName);
+		System.out.println("Mobile Brand : "+brand);
+		System.out.println("Price : "+price);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Mobile obj=new Mobile();
+		obj.brand="Realme";
+		obj.price=20000;
+		obj.showDetails();
+		Mobile obj1=new Mobile();
+		obj1.brand="Samsung";
+		obj1.price=25000;
+		obj1.showDetails();
+	}
+
+}
+
+--------------------------------------------------------------------------------------------------
+
+package Task2;
+
+public class Patient {
+
+	static String hospitalName="Kims";
+	String name;
+	int age;
+	void printDetails() {
+		System.out.println("Hospital Name : "+hospitalName);
+		System.out.println("Patient Name : "+name);
+		System.out.println("Patient age : "+age);
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Patient obj=new Patient();
+		obj.name="John Doe";
+		obj.age=25;
+		obj.printDetails();
+		
+		Patient obj1=new Patient();
+		obj1.name="Emma";
+		obj1.age=70;
+		obj1.printDetails();
+		
+	}
+
+}

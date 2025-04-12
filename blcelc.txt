@@ -1,0 +1,272 @@
+package blc_elc;
+
+public class Product {
+
+	int id;
+	String name;
+	double price;
+	int quantity;
+	
+	void setId(int i) {
+		id=i;
+	}
+	void setName(String n) {
+		name=n;
+	}
+	void setPrice(double p) {
+		price = p;
+	}
+	void setQuantity(int q) {
+		quantity=q;
+	}
+	
+	int getId() {
+		return id;
+	}
+	String getName() {
+		return name;
+	}
+	double getPrice() {
+		return price;
+	}
+	int getQuantity() {
+		return quantity;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Product p=new Product();
+		p.setId(1);
+		p.setName("Paneer");
+		p.setPrice(100);
+		p.setQuantity(2);
+		
+		System.out.println("Id "+p.getId());	
+		System.out.println("Name "+p.getName());	
+		System.out.println("price "+p.getPrice());	
+		System.out.println("Quantiyt "+p.getQuantity());
+		
+		Product p1=new Product();
+		p1.setId(2);
+		p1.setName("Manchuria");
+		p1.setPrice(50);
+		p1.setQuantity(3);
+		
+		System.out.println("Id "+p1.getId());	
+		System.out.println("Name "+p1.getName());	
+		System.out.println("price "+p1.getPrice());	
+		System.out.println("Quantiyt "+p1.getQuantity());
+	}
+
+}
+-------------------------------------------------------------------------------
+
+package blc_elc;
+
+public class BankAccount {
+	long accNum;
+	String name;
+	double balance;
+	
+	long getAccNum() {
+		return accNum;
+	}
+
+	void setAccNum(long accNum) {
+		this.accNum = accNum;
+	}
+
+	String getName() {
+		return name;
+	}
+
+	void setName(String name) {
+		this.name = name;
+	}
+
+	double getBalance() {
+		return balance;
+	}
+
+	void setBalance(double balance) {
+		this.balance = balance;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		BankAccount obj=new BankAccount();
+		obj.setAccNum(1234567890);
+		obj.setName("Ahra Zoya");
+		obj.setBalance(1000);
+		
+		System.out.println(obj.getAccNum()+" "+obj.getName()+" "+obj.getBalance());
+		
+		obj.setBalance(2000);
+		System.out.println(obj.getAccNum()+" "+obj.getName()+" "+obj.getBalance());
+	}
+
+}
+
+------------------------------------------------------------------------------------------------
+
+package blc_elc;
+
+public class Employee {
+	int id;
+	String name;
+	double salary;
+	
+	 int getId() {
+		return id;
+	}
+
+	 void setId(int id) {
+		this.id = id;
+	}
+
+	 String getName() {
+		return name;
+	}
+
+	 void setName(String name) {
+		this.name = name;
+	}
+
+	 double getSalary() {
+		return salary;
+	}
+
+	 void setSalary(double salary) {
+		this.salary = salary;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 Employee obj=new Employee();
+		 obj.setId(1);
+		 obj.setName("Kulsum");
+		 obj.setSalary(10000);
+		 System.out.println(obj.getId()+" "+obj.getName()+" "+obj.getSalary());
+		 obj.setSalary(20000);
+		 System.out.println(obj.getId()+" "+obj.getName()+" "+obj.getSalary());
+	}
+
+}
+
+--------------------------------------------------------------------------------
+
+package blc_elc;
+
+public class Book {
+	int id;
+	String title;
+	String author;
+	double price;
+	
+	int getId() {
+		return id;
+	}
+
+	void setId(int id) {
+		this.id = id;
+	}
+
+	String getTitle() {
+		return title;
+	}
+
+	void setTitle(String title) {
+		this.title = title;
+	}
+
+	String getAuthor() {
+		return author;
+	}
+
+	void setAuthor(String author) {
+		this.author = author;
+	}
+
+	double getPrice() {
+		return price;
+	}
+
+	void setPrice(double price) {
+		this.price = price;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Book obj=new Book();
+		obj.setId(1);
+		obj.setTitle("White Nights");
+		obj.setAuthor("Foyor");
+		obj.setPrice(110);
+		 System.out.println(obj.getId()+" "+obj.getTitle()+" "+obj.getAuthor()+" "+obj.getPrice());
+
+	}
+
+}
+
+------------------------------------------------------------------------
+
+package blc_elc;
+
+public class Car {
+	int id;
+	String brand;
+	String model;
+	double price;
+	
+	int getId() {
+		return id;
+	}
+
+
+	void setId(int id) {
+		this.id = id;
+	}
+
+
+	String getBrand() {
+		return brand;
+	}
+
+
+	void setBrand(String brand) {
+		this.brand = brand;
+	}
+
+
+	String getModel() {
+		return model;
+	}
+
+
+	void setModel(String model) {
+		this.model = model;
+	}
+
+
+	double getPrice() {
+		return price;
+	}
+
+
+	void setPrice(double price) {
+		this.price = price;
+	}
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Car car=new Car();
+		car.setId(100);
+		car.setBrand("Toyota");
+		car.setModel("xyz");
+		car.setPrice(90000);
+		
+		 System.out.println(car.getId()+" "+car.getBrand()+" "+car.getModel()+" "+car.getPrice());
+	}
+
+}

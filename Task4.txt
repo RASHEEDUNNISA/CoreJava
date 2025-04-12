@@ -1,0 +1,110 @@
+package task4;
+
+public class Book {
+		String title;
+		String author;
+		String isbn;
+		
+		void addEmployeeDetails(String t, String a, String i) {
+			title=t;
+			author=a;
+			isbn=i;
+		}
+		
+		void displayDetails() {
+			System.out.println("Employee Name : "+title);
+			System.out.println("Employee ID : "+author);
+			System.out.println("Employee Salary : "+isbn);
+
+		}
+		public static void main(String[] args) {
+			// TODO Auto-generated method stub
+			Book obj=new Book();
+			obj.addEmployeeDetails("Peer e Kamil", "Nimra Ahmad", "ISBN1245");
+			obj.displayDetails();
+		}
+
+	}
+------------------------------------------------------------------------------------------------------------------------
+package task4;
+
+public class Car {
+	String make,model;
+	String year;
+	
+	void addDetails(String carMake,String m,String y) {
+		make=carMake;
+		model=m;
+		year=y;
+	}
+	
+	void display() {
+		System.out.println("Car Brand : "+make);
+		System.out.println("Car Model : "+model);
+		System.out.println("Car Manufacturing Year : "+year);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Car obj=new Car();
+		obj.addDetails("Toyota", "abc","2020");
+		obj.display();
+	}
+
+}
+------------------------------------------------------------------------------------------------------------------------
+package task4;
+
+public class Employee {
+
+	String name;
+	int id;
+	double salary;
+	
+	void addEmployeeDetails(String n, int i, double s) {
+		name=n;
+		id=i;
+		salary=s;
+	}
+	
+	void displayDetails() {
+		System.out.println("Employee Name : "+name);
+		System.out.println("Employee ID : "+id);
+		System.out.println("Employee Salary : "+salary);
+
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Employee emp=new Employee();
+		emp.addEmployeeDetails("Rashee", 101, 75000);
+		emp.displayDetails();
+	}
+
+}
+------------------------------------------------------------------------------------------------------------------------
+package task4;
+
+public class Product {
+		String name;
+		int id;
+		double price;
+		
+		void addEmployeeDetails(String n, int i, double p) {
+			name=n;
+			id=i;
+			price=p;
+		}
+		
+		void displayDetails() {
+			System.out.println("Employee Name : "+name);
+			System.out.println("Employee ID : "+id);
+			System.out.println("Employee Salary : "+price);
+
+		}
+		public static void main(String[] args) {
+			// TODO Auto-generated method stub
+			Product obj=new Product();
+			obj.addEmployeeDetails("Paneer", 101, 100);
+			obj.displayDetails();
+		}
+
+	}

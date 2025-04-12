@@ -1,0 +1,130 @@
+Basic Mehtod
+
+package com.polymorphism;
+
+class AnimalP{
+	void  makeSound() {
+		System.out.println("Animal Sound");
+	}
+}
+class Dog extends AnimalP{
+	@Override
+	void makeSound() {
+		System.out.println("Bark");
+	}
+}
+public class Animal {
+	public static void main(String[] args) {
+		AnimalP obj=new AnimalP();
+		Dog d=new Dog();
+		obj.makeSound();
+		d.makeSound();
+	}
+}
+------------------------------------------------------------------
+@Override
+
+package com.polymorphism;
+
+class VehicleP{
+	void start() {
+		System.out.println("Vehicle started");
+	}
+}
+class Car extends VehicleP{
+	@Override
+	void start() {
+		System.out.println("Car Started");
+	}
+}
+public class Vehicle {
+
+	public static void main(String[] args) {
+		VehicleP vp=new VehicleP();
+		vp.start();
+		Car c=new Car();
+		c.start();
+
+	}
+
+}
+-------------------------------------------------------------------------
+Overriding with Access Modifiers
+
+package com.polymorphism;
+
+class PersonP{
+	protected void display() {
+		System.out.println("I am a Person");
+	}
+}
+class Student extends PersonP{
+	public void display() {
+		System.out.println("I am a Student");
+	}
+}
+public class Person {
+
+	public static void main(String[] args) {
+		Student s=new Student();
+		PersonP pp=new Student();
+		Student s1=(Student)pp;
+		s1.display();
+		s.display();
+
+	}
+
+}
+--------------------------------------------------------------
+Method Overriding VS Method Hiding
+
+package com.polymorphism;
+class ParentP{
+	static void print() {
+		System.out.println("Print");
+	}
+}
+class Child extends ParentP{
+	static void print() {
+		System.out.println("Child");
+	}
+}
+public class Parent {
+public static void main(String[] args) {
+	ParentP pp=new ParentP();
+	pp.print();
+	ParentP.print();
+	Child c=new Child();
+	c.print();
+	Child.print();
+}
+}
+
+_----------------------------------------------------------------------------
+Dynamic Method
+
+package com.polymorphism;
+class ShapeP{
+	void draw() {
+		System.out.println("Drawing Shape");
+	}
+}
+class Circle extends ShapeP{
+	void draw() {
+		System.out.println("Drawing Circle");
+	}
+}
+class Square extends ShapeP{
+	void draw() {
+		System.out.println("Drawing Square");
+	}
+}
+public class Shape {
+public static void main(String[] args) {
+	ShapeP[] obj=new ShapeP[2];
+	obj[0]=new Circle();
+	obj[1]=new Square();
+	obj[0].draw();
+	obj[1].draw();
+	}
+}
