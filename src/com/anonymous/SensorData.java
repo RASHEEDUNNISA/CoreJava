@@ -27,8 +27,8 @@ import java.util.function.Function;
 				return sd.getTemprature();
 			}
 		};
-		double temp=fun.apply(new SensorData(36,50));
-		System.out.println("Temprature is "+temp+"C");
+		double extract=fun.apply(new SensorData(36,50));
+		System.out.println("Temprature is "+extract+"C");
 		double threshhold=25;
 		Function<Double,Boolean> fun2=new Function<Double,Boolean>(){
 			public Boolean apply(Double temp) {
@@ -36,7 +36,7 @@ import java.util.function.Function;
 				return false;
 			}
 		};
-		Boolean check=fun2.apply(30.0);
+		Boolean check=fun2.apply(extract);
 		System.out.println(check?"Temprature is above threshhold":"Temprature is below threshhold");
 	}
  }
